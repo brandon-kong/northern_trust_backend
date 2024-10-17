@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('api/v1/application/', include('core.application.urls')),
+    path("api/", include("api.urls")),
     
     path('auth/', include('core.user.urls')),
     path('auth/', include('dj_rest_auth.urls')),
